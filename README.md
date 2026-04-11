@@ -223,7 +223,10 @@ So the best direction is:
 Each notebook is independent and represents one phase of the experiment.
 
 
+
 ## Folder Structure
+
+```text
 imagined-speech-eeg-classification-april26-dgn007/
 │
 ├── README.md
@@ -239,7 +242,7 @@ imagined-speech-eeg-classification-april26-dgn007/
 │   ├── 06_transfer_learning.ipynb
 │   ├── 07_transfer_amplitude.ipynb
 │
-├── src/                        # (optional but recommended)
+├── src/
 │   ├── models/
 │   ├── preprocessing/
 │   ├── training/
@@ -257,10 +260,8 @@ imagined-speech-eeg-classification-april26-dgn007/
 │   ├── architecture.png
 │   └── pipeline.png
 │
-└── data/                      # (optional placeholder, usually empty)
+└── data/
     └── README.md
-
-
 
 
 ## Final Conclusion
