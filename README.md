@@ -227,16 +227,38 @@ Each notebook is independent and represents one phase of the experiment.
 imagined-speech-eeg-classification-april26-dgn007/
 │
 ├── README.md
+├── requirements.txt
+├── .gitignore
+│
 ├── notebooks/
-│ ├── Phase 1 - Baseline
-│ ├── Phase 2 - Attention
-│ ├── Phase 3 - Gaussian Noise
-│ ├── Phase 5 - Time Shifting
-│ ├── Phase 6 - Transfer Learning
-│ ├── Phase 7 - Transfer + Amplitude
+│   ├── 01_baseline_eegnet.ipynb
+│   ├── 02_attention_eegnet.ipynb
+│   ├── 03_gaussian_noise.ipynb
+│   ├── 04_amplitude_scaling.ipynb
+│   ├── 05_time_shifting.ipynb
+│   ├── 06_transfer_learning.ipynb
+│   ├── 07_transfer_amplitude.ipynb
+│
+├── src/                        # (optional but recommended)
+│   ├── models/
+│   ├── preprocessing/
+│   ├── training/
+│   └── utils/
 │
 ├── results/
-└── images/
+│   ├── tables/
+│   │   └── performance.md
+│   ├── plots/
+│   │   ├── accuracy_comparison.png
+│   │   └── training_curves.png
+│   └── logs/
+│
+├── images/
+│   ├── architecture.png
+│   └── pipeline.png
+│
+└── data/                      # (optional placeholder, usually empty)
+    └── README.md
 
 
 
