@@ -213,19 +213,21 @@ So the best direction is:
 
 
 
-## Note on Notebook Organization
+## Notebook Guide
 
-In this repository, I have kept the work in two formats so that it is easier to understand and also easier to run.
+To make it easier to follow the work, I have organized the notebooks phase by phase.
 
-First, I have maintained all the experiments as separate notebooks, where each phase is written independently. This helps in clearly seeing what change was made in that particular phase and how it affected the result.
+- Phase 1 shows the baseline EEGNet model
+- Phase 2 tests attention on top of EEGNet
+- Phase 3 explores Gaussian noise augmentation
+- Phase 4 explores amplitude scaling
+- Phase 5 explores time shifting
+- Phase 6 focuses on transfer learning
+- Phase 7 combines transfer learning with amplitude scaling
 
-Along with that, I have also created one combined notebook that includes the full pipeline from Phase 1 to Phase 6 in a single place (combined_phase1_to_phase6_pipeline.ipynb). This notebook shows the complete flow of the work in one continuous script, which can be useful for someone who wants to follow the entire process step by step without switching between multiple files.
+Each notebook is self-contained and can be run independently.
 
-For Phase 7, I have kept it as a separate notebook because it builds on transfer learning and adds an additional step, so it is clearer to keep it independent.
-
-So in simple words, the separate notebooks are useful for understanding each experiment individually, and the combined notebook is useful for seeing the overall workflow in one place.
-
-
+Additionally, there is one combined notebook that includes Phase 1 to Phase 6 in a single flow for easier understanding of the full pipeline.
 
 
 ## How to Run
@@ -242,45 +244,21 @@ Each notebook is independent and represents one phase of the experiment.
 ## Folder Structure
 
 ```text
-imagined-speech-eeg-classification-april26-dgn007/
+imagined-speech-eeg-classification
 │
 ├── README.md
-├── requirements.txt
-├── .gitignore
 │
 ├── notebooks/
-│   ├── 01_baseline_eegnet.ipynb
-│   ├── 02_attention_eegnet.ipynb
+│   ├── 01_baseline.ipynb
+│   ├── 02_attention.ipynb
 │   ├── 03_gaussian_noise.ipynb
 │   ├── 04_amplitude_scaling.ipynb
 │   ├── 05_time_shifting.ipynb
 │   ├── 06_transfer_learning.ipynb
-│   ├── 07_transfer_amplitude.ipynb
-|   ├── combined_phase1_to_phase6_pipeline.ipynb
-│
-├── src/
-│   ├── models/
-│   ├── preprocessing/
-│   ├── training/
-│   └── utils/
-│
-├── results/
-│   ├── tables/
-│   │   └── performance.md
-│   ├── plots/
-│   │   ├── accuracy_comparison.png
-│   │   └── training_curves.png
-│   └── logs/
-│
-├── images/
-│   ├── architecture.png
-│   └── pipeline.png
-│
-└── data/
-    └── README.md
+│   ├── 07_transfer_plus_amplitude.ipynb
+│   ├── combined_phase1_to_phase6_pipeline.ipynb
 
-
-
+```
 
 ## Final Conclusion
 
