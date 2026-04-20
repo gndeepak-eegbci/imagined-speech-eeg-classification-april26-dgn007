@@ -213,6 +213,21 @@ So the best direction is:
 
 
 
+## Note on Notebook Organization
+
+In this repository, I have kept the work in two formats so that it is easier to understand and also easier to run.
+
+First, I have maintained all the experiments as separate notebooks, where each phase is written independently. This helps in clearly seeing what change was made in that particular phase and how it affected the result.
+
+Along with that, I have also created one combined notebook that includes the full pipeline from Phase 1 to Phase 6 in a single place (combined_phase1_to_phase6_pipeline.ipynb). This notebook shows the complete flow of the work in one continuous script, which can be useful for someone who wants to follow the entire process step by step without switching between multiple files.
+
+For Phase 7, I have kept it as a separate notebook because it builds on transfer learning and adds an additional step, so it is clearer to keep it independent.
+
+So in simple words, the separate notebooks are useful for understanding each experiment individually, and the combined notebook is useful for seeing the overall workflow in one place.
+
+
+
+
 ## How to Run
 
 1. Open the notebook in Google Colab  
@@ -241,6 +256,7 @@ imagined-speech-eeg-classification-april26-dgn007/
 │   ├── 05_time_shifting.ipynb
 │   ├── 06_transfer_learning.ipynb
 │   ├── 07_transfer_amplitude.ipynb
+|   ├── combined_phase1_to_phase6_pipeline.ipynb
 │
 ├── src/
 │   ├── models/
@@ -262,6 +278,8 @@ imagined-speech-eeg-classification-april26-dgn007/
 │
 └── data/
     └── README.md
+
+
 
 
 ## Final Conclusion
